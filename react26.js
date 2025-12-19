@@ -1,3 +1,5 @@
+App.js
+
 function App() {
   return (
     <Greeting 
@@ -15,7 +17,9 @@ function Greeting(props) {
   );
 }
 export default App;
+
 index.js
+
 import React from "react";
 import {createRoot} from "react-dom/client";
 import App from"./App";
