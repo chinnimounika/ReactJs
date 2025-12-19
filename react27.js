@@ -1,5 +1,7 @@
+App.js
+
 function App() {
-  return <MySum a={5} b={3}/>;
+return <MySum a={5} b={3}/>;
 }
 function MySum(props) {
   return (
@@ -14,7 +16,9 @@ function MySum(props) {
   );
 }
 export default App;
+
 index.js
+
 import React from "react";
 import {createRoot} from "react-dom/client";
 import App from"./App";
