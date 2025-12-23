@@ -62,14 +62,14 @@ function App(){
   }
   return(
     <div className="App">
-      <header calssName="App-header">
+      <header className="App-header">
         <form onSubmit={(e)=>{handleSubmit(e)}}>
           <h3>Sign-up Form</h3>
           <label>Name:</label><br/><input type="text" value={name}required onChange={(e)=>{handleNameChange(e)}}/><br/>
-          <label>Age:</label><br/><input type="text" value={age}required onChange={(e)=>{handleAgeChange(e)}}/><br/>
-          <label>Email:</label><br/><input type="text" value={email}required onChange={(e)=>{handleEmailChange(e)}}/><br/>
-          <label>Password:</label><br/><input type="text" value={password}required onChange={(e)=>{handlePasswordChange(e)}}/><br/>
-          <label>Confirm Password:</label><br/><input type="text" value={confpassword}required onChange={(e)=>{handleConfPasswordChange(e)}}/><br/>
+          <label>Age:</label><br/><input type="number" value={age}required onChange={(e)=>{handleAgeChange(e)}}/><br/>
+          <label>Email:</label><br/><input type="email" value={email}required onChange={(e)=>{handleEmailChange(e)}}/><br/>
+          <label>Password:</label><br/><input type="password" value={password}required onChange={(e)=>{handlePasswordChange(e)}}/><br/>
+          <label>Confirm Password:</label><br/><input type="password" value={confpassword}required onChange={(e)=>{handleConfPasswordChange(e)}}/><br/>
           <input type="submit" value="Submit"/>
         </form>
       </header>
@@ -77,4 +77,3 @@ function App(){
   );
 }
 export default App;
-
